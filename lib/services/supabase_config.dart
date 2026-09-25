@@ -8,13 +8,14 @@
 class SupabaseConfig {
   SupabaseConfig._();
 
-  static const String url = 'https://SEU-PROJETO.supabase.co';
-  static const String publishableKey = 'SUA-PUBLISHABLE-KEY-AQUI';
+  static const String url = 'https://hvsggibwgzjgglxlreuk.supabase.co';
+  static const String publishableKey =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2c2dnaWJ3Z3pqZ2dseGxyZXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAzNjg0MDMsImV4cCI6MjEwNTk0NDQwM30.GqNDlQlZsRyGH8MpZwuAfNarzsNOhoZDCRcX_wiPB78';
 
   /// Nome do bucket de Storage onde as imagens processadas são enviadas.
   /// Crie este bucket no painel do Supabase (Storage > New bucket) e marque
   /// como público, ou ajuste as políticas de RLS conforme necessário.
-  static const String bucket = 'imagens-editadas';
+  static const String bucket = 'casseb';
 
   static bool get isConfigured => url.contains('supabase.co') && !url.contains('SEU-PROJETO');
 }
